@@ -1,0 +1,47 @@
+# Modifier HTML
+
+Ce script Python permet de modifier les balises HTML spécifiques (`<link>`, `<img>`, `<script>`) dans un fichier HTML en remplaçant les URLs commençant par "assets" par des chemins statiques Django.
+
+## Prérequis
+
+Assurez-vous d'avoir Python 3.x installé sur votre système. Vous pouvez le télécharger depuis [python.org](https://www.python.org).
+
+## Installation des dépendances
+
+Pour utiliser ce script, vous devez installer BeautifulSoup4, une bibliothèque Python pour analyser des documents HTML et XML.
+
+```bash
+pip install beautifulsoup4
+```
+
+## Utilisation
+
+1. **Téléchargement du script**
+   - Clonez ce dépôt GitHub `.
+
+2. **Exécution du script**
+   - Ouvrez un terminal.
+   - Naviguez jusqu'au répertoire contenant `modifier_html.py`.
+
+   ```bash
+   PS: python3 pour linux et python pour windows
+   python -m venv env
+   source env/bin/activate
+   pip install .
+   python modifier_html.py
+   ```
+
+3. **Suivez les instructions**
+   - Vous serez invité à spécifier le chemin du fichier HTML que vous souhaitez modifier.
+   - Sélectionnez les balises HTML que vous souhaitez modifier (link, img, script).
+   - Les URLs commençant par "assets" seront converties en chemins statiques Django (`{% static 'chemin' %}`).
+
+4. **Fichier HTML de sortie**
+   - Vous serez invité à spécifier le chemin du fichier HTML modifié de destination. Assurez-vous d'avoir une sauvegarde de votre fichier original, car il sera écrasé.
+
+## Licence
+
+Ce projet est sous licence MIT - voir le fichier [LICENSE](LICENSE) pour plus de détails.
+
+---
+
