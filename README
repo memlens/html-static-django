@@ -8,11 +8,7 @@ Assurez-vous d'avoir Python 3.x installé sur votre système. Vous pouvez le té
 
 ## Installation des dépendances
 
-Pour utiliser ce script, vous devez installer BeautifulSoup4, une bibliothèque Python pour analyser des documents HTML et XML.
-
-```bash
-pip install beautifulsoup4
-```
+Pour utiliser ce script, vous devez installer BeautifulSoup4, une bibliothèque Python pour analyser des documents HTML et XML
 
 ## Utilisation
 
