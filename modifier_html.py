@@ -110,6 +110,6 @@ if __name__ == '__main__':
 
             # Écrire les modifications dans le fichier de destination
             if fichier_destination:
-                result = ouvrirFichier(fichier_destination, 'w', str(soup))
+                result = ouvrirFichier(fichier_destination, 'w', str(soup.prettify()))
                 if result is not None:
                     print(f"Les modifications ont été enregistrées dans '{fichier_destination}'.")
